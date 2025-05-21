@@ -1,0 +1,15 @@
+server:
+  port: 3001
+
+spring:
+  application:
+    name: airline-api
+  cloud:
+    gateway:
+      routes:
+        - id: chatbot-service
+          uri: http://localhost:3000
+          predicates:
+            - Path=/api/chat/**
+      default-filters:
+        - AddResponseHeader=X-Gateway, Gateway-Service
