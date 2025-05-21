@@ -20,7 +20,7 @@ By default, the system uses a dummy parser. You can switch to OpenAI in the gate
 All chat messages are saved to Firebase Firestore under the messages collection.
 
 --https://github.com/isilkahraman/airline-api.git --https://github.com/isilkahraman/gateway.git --https://github.com/isilkahraman/ai-agent-chat.git
---I had issues with deployment due to pom.xml file path.
+--I had issues with deployment due to ./mvnw clean install command. Couldn't solve it.
 
 https://drive.google.com/file/d/1P5W2gG5e-g7ijgNJmXcv79SsE2lyVvpD/view?usp=drive_link
 
